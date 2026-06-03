@@ -14,7 +14,7 @@ flowchart TD
   F --> G{Pair in localStorage cache?}
   G -->|All cached| H[Map device_type to every row]
   G -->|Some new| I[Single OpenAI batch call]
-  I --> J[JSON dictionary Manufacturer | Model to device type]
+  I --> J["JSON map: Mfg + Model keys to device type"]
   J --> K[Merge into cache]
   K --> H
   H --> L[Dashboard charts and table]
