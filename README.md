@@ -1,5 +1,7 @@
 # Equiply Final Challenge
 
+## Youtube Video: https://youtu.be/PKnvYGwbDjM
+
 A small React app that enriches hospital equipment CSVs: pull manufacturing years from serial numbers with vendor-specific regex, classify device types with one batched OpenAI call, and explore the results on a dashboard. Built against `challenge_data-v1.csv` (801 rows, 55 unique manufacturer/model pairs).
 
 ## Pipeline flow
