@@ -145,11 +145,7 @@ export function extractYear(manufacturer, serialNumber, model = "") {
   }
 
   if (mfg.includes("hill")) {
-    const suffixMatch = sn.match(/(19\d{2}|20\d{2})$/);
-    if (suffixMatch) return parseInt(suffixMatch[1], 10);
-
-    const prefixMatch = sn.match(/^[A-Z](\d{2})/);
-    if (prefixMatch) return 2000 + parseInt(prefixMatch[1], 10);
+    return "Unknown";
   }
 
   if (mfg.includes("exergen")) {
